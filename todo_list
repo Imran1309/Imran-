@@ -3,6 +3,7 @@
         <title>Todo</title>
     </head>
     <body>
+<div></div>
         <h2>Todo List</h2>
         <ul id='todoList'>
         </ul>
