@@ -1,0 +1,89 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-900 text-white p-6">
+      {/* Header */}
+      <header className="flex justify-between items-center p-4 border-b border-gray-700">
+        <h1 className="text-3xl font-bold">IMRAN.S.S</h1>
+        <nav>
+          <a href="#projects" className="mx-3 hover:text-blue-400">Projects</a>
+          <a href="#skills" className="mx-3 hover:text-blue-400">Skills</a>
+          <a href="#contact" className="mx-3 hover:text-blue-400">Contact</a>
+        </nav>
+      </header>
+      
+      {/* Hero Section */}
+      <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-20">
+        <h2 className="text-4xl font-semibold">Hello, I'm <span className="text-blue-400">IMRAN.S.S</span></h2>
+        <p className="text-lg mt-4">As a tech-savvy and innovative Computer Science Engineering student, I'm passionate about harnessing technology to drive positive change.</p>
+      </motion.section>
+
+      {/* Skills */}
+      <section id="skills" className="py-10">
+        <h3 className="text-2xl font-semibold mb-4">Skills</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+           <span className="bg-gray-800 p-2 rounded-lg">MySQL</span>
+          <span className="bg-gray-800 p-2 rounded-lg">HTML</span>
+           <span className="bg-gray-800 p-2 rounded-lg">CSS</span>
+          <span className="bg-gray-800 p-2 rounded-lg">JavaScript</span>
+          <span className="bg-gray-800 p-2 rounded-lg">Express.js</span>
+           <span className="bg-gray-800 p-2 rounded-lg">Node.js</span>
+          <span className="bg-gray-800 p-2 rounded-lg">Python</span>
+          <span className="bg-gray-800 p-2 rounded-lg">React.js</span>
+          <span className="bg-gray-800 p-2 rounded-lg">AI & ML</span>
+          <span className="bg-gray-800 p-2 rounded-lg">MongoDB</span>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="py-10">
+        <h3 className="text-2xl font-semibold mb-4">Projects</h3>
+        <div className="space-y-4">
+          <div className="bg-gray-800 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold">AI-Based Traffic Management System</h4>
+            <p className="text-gray-400">Developed a real-time AI system for optimizing traffic signals.</p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold">CV Builder Website</h4>
+            <p className="text-gray-400">Built a beginner-friendly web tool to generate professional resumes.</p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold">App for Road Awareness</h4>
+            <p className="text-gray-400">Developed an app to educate people about traffic symbols and road safety.</p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold">Demo project1</h4>
+            <p className="text-gray-400">Make a poster for an event using HTML/CSS.</p>
+            <a href="https://imran13.neocities.org/event/event" className="text-blue-400 text-2xl">View Project</a>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold">Chatbot for Customer Support</h4>
+            <p className="text-gray-400">Built an AI-powered chatbot to assist customers with automated responses.</p>
+          </div>
+           <div className="bg-gray-800 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold">Website for learning</h4>
+            <p className="text-gray-400">https://imran13.neocities.org/website/</p>
+              <a href="https://imran13.neocities.org/website/" className="text-blue-400 text-2xl">View Project</a>
+             
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-10 text-center">
+        <h3 className="text-2xl font-semibold">Contact</h3>
+        <div className="flex justify-center space-x-4 mt-4">
+          <a href="https://github.com/Imran1309/Imran-/commits?author=Imran1309" className="text-blue-400 text-2xl"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/imran-s-s-13i09" className="text-blue-400 text-2xl"><FaLinkedin /></a>
+          <a href="mailto:imranss1309@gmail.com" className="text-blue-400 text-2xl"><FaEnvelope /></a>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+
+export default:Portfolio;
